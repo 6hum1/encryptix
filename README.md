@@ -1,2 +1,2 @@
 # encryptix
-i includes my internship projects 
+it includes my internship projects 
