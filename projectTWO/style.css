@@ -1,0 +1,426 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+body{ 
+      background-color: rgb(0,0,33);
+      color:white;
+      font-family: "Poppins", sans-serif; 
+}
+
+nav{
+    display:flex;  
+    justify-content: space-around;
+    align-items:center; 
+    height: 80px;
+    background-color: rgb(127, 189, 244);
+    color:white;
+
+
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li a:hover{
+    
+    color:rgb(159, 159, 244);
+    font-size: 1.02rem;
+}
+.left{
+    font-size: 1.7rem;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin:120px 0 ; 
+    align-items: center;
+}
+.firstSection>div{
+    width: 40%;
+    
+}
+.leftSection{
+     
+    font-size: 3rem;
+    
+}
+/* .rightsection{
+     /* background-color: red; */
+
+.rightsection img{
+    width:40%;
+    margin:25px 0 ;
+}
+
+/* .image-container{
+
+} */
+.image-container img {
+        width: 40vw;
+        /* height: 40vh; */
+        display: block;
+    }
+
+#element{
+    color:rgb(157, 67, 241);
+}
+
+.purple{
+    color:rgb(157, 67, 241);
+}
+.leftSection .btn{
+    padding: 20px 40px ;
+}
+
+.leftSection button{
+    padding :12px;
+    background:#1e2167;
+    color:white;
+    border:2px solid white ; 
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    padding:10px 123px ; 
+    justify-content:  baseline;
+    align-items: center;
+    background-color: white;
+    /* height:15px; */
+    color:gray;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media  screen and (max-width:1000px){
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto; /* Changed from 80vh to auto for better content fit */
+    padding: 100px 0; /* Added padding for spacing */
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.secondSection .text-gray {
+    color: gray;
+    display: block; /* Ensures it takes up a new line */
+    text-align: center;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.secondSection .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills-content .left p {
+    text-align: justify;
+}
+
+.skills-content .left button {
+    display: inline-block;
+    padding :12px;
+    background:#1e2167;
+    color:white;
+    border:2px solid white ; 
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.skills-content .left a:hover {
+    color: blue;
+    background: none;
+}
+
+.skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: blue;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 60%;
+}
+
+.skills-content .right .js::before {
+    width: 80%;
+}
+
+.skills-content .right .php::before {
+    width: 50%;
+}
+
+.skills-content .right .mysql::before {
+    width: 70%;
+}
+
+/* section{
+    padding: 100px 0;
+} */
+
+.skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: blue;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(85, 85, 240);
+    height: 1.2px;
+    margin: 120px 84px;
+}
+
+/* General section styling */
+.contact {
+    padding: 100px 0; /* Added padding for spacing */
+}
+
+.contact .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Title styling */
+.contact .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+/* .contact .title::after {
+    content: "get in touch";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: blue;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+} */
+
+/* Content styling */
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+/* Text and form styling */
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.contact .right form .button-area button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 60px;
+    padding :12px;
+    background:#1e2167;
+    color:white;
+    border:2px solid white ; 
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.contact .right form .button-area button:hover {
+    color: blue;
+    background: none;
+}
+
+/* Additional styling for thirdSection */
+.thirdSection .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.thirdSection h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}

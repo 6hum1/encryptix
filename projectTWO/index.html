@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhumi Dahiya</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!--  <li></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hii, My name is <span class="purple">Bhumi </span> 
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+                <div class="btn">
+                    <a href="./resume.txt" target = "_blank" ><button>Download Resume</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <div class="image-container">
+                    <img src="bg.png" alt="Portfolio Image">
+                </div>
+        </section>
+
+        <hr>
+
+        <section class = "secondSection" class="skills" id="skills">
+            <span class="text-gray">What i have learned so far</span>
+            <h1>My Skills</h1>
+    
+        <div class="max-width">
+           
+            <div class="skills-content">
+                <div class="column left">
+                   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <div class="btn">
+                        <a href="#"  ><button>Read more</button></a>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- contact section start -->
+        <section class="contact thirdSection" id="contact">
+            <div class="max-width">
+                <h1 class="title">Contact me</h1>
+                <div class="contact-content">
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            </div>
+                            <div class="button-area">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        
+
+    </main>
+    <footer>
+        <div class="footer">Copyright &#169; www.myportfolio.com | All rights reserved</div>
+        
+    </footer>
+ 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer.', 'Graphic Designer.'],
+      typeSpeed: 50,
+    });
+  </script>
+
+      
+</body>
+</html>
